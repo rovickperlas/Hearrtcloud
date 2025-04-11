@@ -50,59 +50,10 @@ body, html {
 }
 
 .log-bp {
+    background-color: #f4f4f4;
     display: flex;
-    justify-content: center; // Centers content horizontally
-    align-items: center;     // Centers content vertically
-    overflow: hidden;
-    gap: 0px;
-    width: 80%;
-    height: 70%;
-    position: relative
+    justify-content: center;
+    align-items: center;
+
 }
 
-.login-box {
-    padding: 50px;                // Adjust padding
-    position: relative;
-    overflow: hidden;
-    height: 100%;                 // Take full height of the parent
-    width: 50%;                   // Use 50% of the parent width
-    background: white;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-    
-  
-    h2 {
-        margin-bottom: 20px;
-    }
-
-    input, button {
-        width: 100%;
-        padding: 10px;
-        margin: 10px 0;
-        border: 1px solid #ccc;
-        border-radius: 5px;
-    }
-
-    button {
-        background: $primary-color;
-        color: white;
-        cursor: pointer;
-    }
-
-    .signup-link {
-        display: block;
-        text-align: center;
-        color: $primary-color;
-        text-decoration: none;
-    }
-    
-}
-
-.login-pic{
-    height: 100%;                 // Take full height of the parent
-    width: 50%;                   // Use 50% of the parent width
-    overflow: hidden;
-    background-image: url('/images/LOGIN.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-}
