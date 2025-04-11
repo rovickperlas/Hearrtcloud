@@ -1,0 +1,108 @@
+$primary-color: #03045E;
+$background-color: #f4f4f4;
+$text-color: #333;
+
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: $background-color;
+    color: $text-color;
+    height: 100vh;  // Full viewport height
+    overflow: hidden;  // Prevent scrolling
+}
+
+.header {
+    background: $primary-color;
+    color: white;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+
+    .logo-container {
+        display: flex;
+        align-items: center;
+
+        .logo {
+            width: 70px;
+            margin-right: 10px;
+            margin-left: 10px;
+        }
+
+        .brand-name {
+            font-size: 24px;
+            font-weight: bold;
+        }
+    }
+}
+
+.container {
+    display: flex;
+    justify-content: center; // Centers content horizontally
+    align-items: center;     // Centers content vertically
+    width: 100vw;            // 100% of the viewport width
+    height: 100vh;           // 100% of the viewport height
+    overflow: hidden;        // Prevents scrolling (if needed)
+    background-image: url('/images/Backg.png');  // Correct path to your image
+    background-size: cover;  // Ensures the image covers the div
+    background-position: center;  // Centers the background image
+    background-repeat: no-repeat;  // Prevents the image from repeating
+}
+
+.log-bp {
+    display: flex;
+    justify-content: center; // Centers content horizontally
+    align-items: center;     // Centers content vertically
+    overflow: hidden;
+    gap: 0px;
+    width: 80%;
+    height: 70%;
+    position: relative
+}
+
+.login-box {
+    padding: 50px;                // Adjust padding
+    position: relative;
+    overflow: hidden;
+    height: 100%;                 // Take full height of the parent
+    width: 50%;                   // Use 50% of the parent width
+    background: white;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    
+  
+    h2 {
+        margin-bottom: 20px;
+    }
+
+    input, button {
+        width: 100%;
+        padding: 10px;
+        margin: 10px 0;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+
+    button {
+        background: $primary-color;
+        color: white;
+        cursor: pointer;
+    }
+
+    .signup-link {
+        display: block;
+        text-align: center;
+        color: $primary-color;
+        text-decoration: none;
+    }
+    
+}
+
+.login-pic{
+    height: 100%;                 // Take full height of the parent
+    width: 50%;                   // Use 50% of the parent width
+    overflow: hidden;
+    background-image: url('/images/LOGIN.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
