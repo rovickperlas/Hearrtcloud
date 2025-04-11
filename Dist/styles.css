@@ -53,7 +53,10 @@ body, html {
 }
 .log-bp .form-section {
   flex: 1;
-  padding: 40px;
+  padding: 50px;
+  padding-top: 130px;
+  padding-right: 20px;
+  padding-left: 90px;
 }
 .log-bp .form-section h2 {
   margin-bottom: 10px;
@@ -93,13 +96,15 @@ body, html {
   border: 2px solid #03045E;
 }
 .log-bp .illustration-section {
+  padding-right: 50px;
   flex: 1;
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 50%;
 }
 .log-bp .illustration-section img {
-  width: 80%;
-  max-width: 400px;
+  width: 100%;
+  max-width: 450px;
   height: auto;
 }/*# sourceMappingURL=styles.css.map */
