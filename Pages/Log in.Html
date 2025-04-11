@@ -1,34 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HeartCloud Login</title>
-    <link rel="stylesheet" href="..\Dist\styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HeartCloud Login</title>
+  <link rel="stylesheet" href="../Dist/styles.css" />
 </head>
 <body>
-    <header class="header">
-        <div class="logo-container">
-            <img src="/images/logo.png" alt="HeartCloud Logo" class="logo">
-            <span class="brand-name">HeartCloud</span>
-        </div>
-    </header>
-    
-    <div class="container">
-        <div class="log-bp">
-            <div class="login-box">
-            <h2>Login</h2>
-            <form action="#" method="POST">
-                <input type="text" placeholder="Username" required>
-                <input type="password" placeholder="Password" required>
-                <button type="submit">Sign in</button>
-                <a href="#" class="signup-link">Sign up</a>
-            </form>
-            </div>
-            <div class="login-pic">
-                 
-            </div> 
-        </div>
+  <header class="header">
+    <div class="logo-container">
+      <img src="/images/logo.png" alt="HeartCloud Logo" class="logo" />
+      <span class="brand-name">HeartCloud</span>
     </div>
+  </header>
+
+  <div class="container">
+    <div class="log-bp">
+      <div class="form-section">
+        <h2>Login</h2>
+        <p>Welcome to HeartCloud</p>
+        <form>
+          <input type="email" placeholder="Email Address" required />
+          <input type="password" placeholder="Password" required />
+          <div class="button-group">
+            <button type="submit" class="btn primary">Sign In</button>
+            <button type="button" class="btn secondary">Register</button>
+          </div>
+        </form>
+      </div>
+
+      <div class="illustration-section">
+        <img src="/images/LOGIN.jpg" alt="Doctors Illustration" />
+      </div>
+    </div>
+  </div>
 </body>
 </html>
