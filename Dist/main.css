@@ -85,6 +85,7 @@ body, html {
   border: none;
   border-radius: 10px;
   cursor: pointer;
+  text-align: center;
 }
 .log-bp .form-section .button-group .btn.primary {
   background-color: #03045E;
@@ -94,6 +95,10 @@ body, html {
   background-color: white;
   color: #03045E;
   border: 2px solid #03045E;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
 }
 .log-bp .illustration-section {
   padding-right: 50px;
