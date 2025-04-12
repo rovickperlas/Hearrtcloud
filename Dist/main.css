@@ -54,7 +54,7 @@ body, html {
 .log-bp .form-section {
   flex: 1;
   padding: 50px;
-  padding-top: 130px;
+  padding-top: 20px;
   padding-right: 20px;
   padding-left: 90px;
 }
@@ -104,6 +104,128 @@ body, html {
   width: 50%;
 }
 .log-bp .illustration-section img {
+  width: 100%;
+  max-width: 450px;
+  height: auto;
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background: #f4f4f4;
+  color: #333;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.header {
+  background: #03045E;
+  color: white;
+  padding: 15px 20px;
+  display: flex;
+  align-items: center;
+}
+.header .logo-container {
+  display: flex;
+  align-items: center;
+}
+.header .logo-container .logo {
+  width: 40px;
+  margin-right: 10px;
+}
+.header .logo-container .brand-name {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh - 70px);
+  background-image: url("/images/Backg.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.register-card {
+  display: flex;
+  background-color: white;
+  width: 90%;
+  max-width: 1200px;
+  height: 600px;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.form-section {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 60px;
+  gap: 10px;
+}
+.form-section h2 {
+  font-size: 26px;
+  margin-bottom: 5px;
+}
+.form-section p {
+  font-size: 14px;
+  color: #777;
+  margin-bottom: 20px;
+}
+.form-section input[type=text],
+.form-section input[type=email],
+.form-section input[type=password] {
+  width: 70%;
+  padding: 12px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+}
+.form-section .checkbox {
+  font-size: 14px;
+  margin: 15px 0;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.form-section .checkbox input[type=checkbox] {
+  transform: scale(1.2);
+}
+.form-section .checkbox .highlight {
+  font-weight: bold;
+  color: #03045E;
+  cursor: pointer;
+}
+.form-section .btn {
+  width: 150px;
+  padding: 10px;
+  background-color: white;
+  border: 2px solid #03045E;
+  color: #03045E;
+  font-weight: bold;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.form-section .btn:hover {
+  background-color: #03045E;
+  color: white;
+}
+
+.illustration-section {
+  padding-right: 50px;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+}
+.illustration-section img {
   width: 100%;
   max-width: 450px;
   height: auto;
