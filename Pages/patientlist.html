@@ -2,46 +2,55 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>HeartCloud Dashboard</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>HeartCloud - Patient List</title>
   <link rel="stylesheet" href="../Dist/main.css" />
 </head>
 <body>
-  <div class="app">
+  <div class="main-layout">
     <aside class="sidebar">
-      <div class="logo-section">
-        <img src="/images/logo.png" alt="Logo" class="logo" />
-        <h1 class="brand">HeartCloud</h1>
+      <div class="logo">
+       
       </div>
-      <nav class="nav-icons">
-        <i class="icon">🕒</i>
-        <i class="icon">👤</i>
-        <i class="icon">📁</i>
+      <nav>
+        <ul>
+          <li><i class="icon">👤</i></li>
+          <li><i class="icon">📄</i></li>
+        </ul>
       </nav>
     </aside>
 
-    <main class="main-content">
-      <header class="main-header">
-        <h2>Patient Dashboard</h2>
+    <div class="main-content">
+      <header class="header">
+        <div class="header-logo">
+          <img src="/images/logo.png" alt="HeartCloud Logo" />
+          <span>HeartCloud</span>
+        </div>
       </header>
 
-      <section class="patient-list">
-        <h3>Patient List</h3>
-        <div class="grid">
+      <section class="content">
+        <h2>Patient List</h2>
+        <div class="patient-grid">
+          <!-- Repeat this div for each patient -->
           <div class="patient-card">
             <i class="folder-icon">📁</i>
-            John Dela Cruz
+            <span>John Dela Cruz</span>
           </div>
-          <div class="patient-card">
-            <i class="folder-icon">📁</i>
-            Maria Santos
-          </div>
+          <!-- Repeat above block as needed -->
+          <div class="patient-card"><i class="folder-icon">📁</i><span>John Dela Cruz</span></div>
+          <div class="patient-card"><i class="folder-icon">📁</i><span>John Dela Cruz</span></div>
+          <div class="patient-card"><i class="folder-icon">📁</i><span>John Dela Cruz</span></div>
+          <div class="patient-card"><i class="folder-icon">📁</i><span>John Dela Cruz</span></div>
+          <div class="patient-card"><i class="folder-icon">📁</i><span>John Dela Cruz</span></div>
+          <div class="patient-card"><i class="folder-icon">📁</i><span>John Dela Cruz</span></div>
+          <div class="patient-card"><i class="folder-icon">📁</i><span>John Dela Cruz</span></div>
         </div>
-        <button class="add-new">
-          <span>+</span> New
+
+        <button class="new-button">
+          <span>➕</span> New
         </button>
       </section>
-    </main>
+    </div>
   </div>
 </body>
 </html>

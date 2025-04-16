@@ -1,59 +1,47 @@
-$primary-color: #03045E;
-$background: #f4f4f4;
-$card-color: #e0e0e0;
+$primary-color: #03045e;
+$gray-bg: #e0e0e0;
+$light-text: #333;
 $white: #ffffff;
-$shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
 
 body, html {
+  margin: 0;
+  padding: 0;
   font-family: 'Arial', sans-serif;
-  background: $background;
-  height: 100vh;
-  overflow: hidden;
+  background: $white;
+  color: $light-text;
 }
 
-.app {
+.main-layout {
   display: flex;
-  height: 100%;
 }
 
 .sidebar {
+  padding-top: 10px;
   width: 80px;
-  background-color: $primary-color;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  background: $primary-color;
+  height: 100vh;
   padding-top: 20px;
-  color: $white;
 
-  .logo-section {
+  .logo {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 30px;
+    justify-content: center;
+    margin-bottom: 40px;
 
-    .logo {
+    img {
       width: 40px;
-      margin-bottom: 10px;
-    }
-
-    .brand {
-      font-size: 14px;
-      text-align: center;
     }
   }
 
-  .nav-icons {
+  nav ul {
+    list-style: none;
+    padding: 0;
     display: flex;
     flex-direction: column;
     gap: 25px;
+    align-items: center;
 
     .icon {
+      color: white;
       font-size: 20px;
       cursor: pointer;
     }
@@ -62,74 +50,76 @@ body, html {
 
 .main-content {
   flex: 1;
-  background: $white;
-  padding: 30px;
-  position: relative;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
 
-  .main-header {
-    margin-bottom: 20px;
+  .header {
+    background-color: $primary-color;
+    color: white;
+    display: flex;
+    align-items: center;
+    padding: 15px 30px;
 
-    h2 {
-      font-size: 24px;
-      font-weight: bold;
+    .header-logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+
+      img {
+        width: 30px;
+      }
+
+      span {
+        font-size: 22px;
+        font-weight: bold;
+      }
     }
   }
 
-  .patient-list {
-    h3 {
-      font-size: 18px;
-      margin-bottom: 20px;
+  .content {
+    padding: 40px;
+
+    h2 {
+      font-size: 24px;
+      margin-bottom: 30px;
     }
 
-    .grid {
+    .patient-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+      grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
       gap: 20px;
+    }
 
-      .patient-card {
-        background-color: $card-color;
-        padding: 12px 20px;
-        border-radius: 12px;
-        display: flex;
-        align-items: center;
-        gap: 10px;
-        font-weight: 500;
-        cursor: pointer;
-        transition: 0.2s;
+    .patient-card {
+      background-color: $gray-bg;
+      padding: 12px 20px;
+      display: flex;
+      align-items: center;
+      border-radius: 10px;
+      font-weight: bold;
+      gap: 10px;
+      cursor: pointer;
 
-        &:hover {
-          background-color: darken($card-color, 5%);
-        }
-
-        .folder-icon {
-          font-size: 18px;
-        }
+      .folder-icon {
+        font-size: 20px;
       }
     }
 
-    .add-new {
+    .new-button {
       position: absolute;
       bottom: 30px;
       right: 30px;
-      background-color: $white;
-      border: none;
-      padding: 10px 20px;
+      padding: 12px 20px;
+      background: white;
       border-radius: 10px;
-      font-weight: 600;
-      box-shadow: $shadow;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+      border: none;
+      font-weight: bold;
       display: flex;
       align-items: center;
-      gap: 8px;
+      gap: 10px;
       cursor: pointer;
-      transition: 0.2s ease;
-
-      span {
-        font-size: 20px;
-      }
-
-      &:hover {
-        transform: translateY(-2px);
-      }
     }
   }
 }
