@@ -1,0 +1,135 @@
+$primary-color: #03045E;
+$background: #f4f4f4;
+$card-color: #e0e0e0;
+$white: #ffffff;
+$shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body, html {
+  font-family: 'Arial', sans-serif;
+  background: $background;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.app {
+  display: flex;
+  height: 100%;
+}
+
+.sidebar {
+  width: 80px;
+  background-color: $primary-color;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 20px;
+  color: $white;
+
+  .logo-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+
+    .logo {
+      width: 40px;
+      margin-bottom: 10px;
+    }
+
+    .brand {
+      font-size: 14px;
+      text-align: center;
+    }
+  }
+
+  .nav-icons {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+
+    .icon {
+      font-size: 20px;
+      cursor: pointer;
+    }
+  }
+}
+
+.main-content {
+  flex: 1;
+  background: $white;
+  padding: 30px;
+  position: relative;
+
+  .main-header {
+    margin-bottom: 20px;
+
+    h2 {
+      font-size: 24px;
+      font-weight: bold;
+    }
+  }
+
+  .patient-list {
+    h3 {
+      font-size: 18px;
+      margin-bottom: 20px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+      gap: 20px;
+
+      .patient-card {
+        background-color: $card-color;
+        padding: 12px 20px;
+        border-radius: 12px;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        font-weight: 500;
+        cursor: pointer;
+        transition: 0.2s;
+
+        &:hover {
+          background-color: darken($card-color, 5%);
+        }
+
+        .folder-icon {
+          font-size: 18px;
+        }
+      }
+    }
+
+    .add-new {
+      position: absolute;
+      bottom: 30px;
+      right: 30px;
+      background-color: $white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 10px;
+      font-weight: 600;
+      box-shadow: $shadow;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      cursor: pointer;
+      transition: 0.2s ease;
+
+      span {
+        font-size: 20px;
+      }
+
+      &:hover {
+        transform: translateY(-2px);
+      }
+    }
+  }
+}

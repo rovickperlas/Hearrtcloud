@@ -234,4 +234,117 @@ body, html {
   width: 100%;
   max-width: 450px;
   height: auto;
-}/*# sourceMappingURL=main.css.map */
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body, html {
+  font-family: "Arial", sans-serif;
+  background: #f4f4f4;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.app {
+  display: flex;
+  height: 100%;
+}
+
+.sidebar {
+  width: 80px;
+  background-color: #03045E;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 20px;
+  color: #ffffff;
+}
+.sidebar .logo-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 30px;
+}
+.sidebar .logo-section .logo {
+  width: 40px;
+  margin-bottom: 10px;
+}
+.sidebar .logo-section .brand {
+  font-size: 14px;
+  text-align: center;
+}
+.sidebar .nav-icons {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+.sidebar .nav-icons .icon {
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.main-content {
+  flex: 1;
+  background: #ffffff;
+  padding: 30px;
+  position: relative;
+}
+.main-content .main-header {
+  margin-bottom: 20px;
+}
+.main-content .main-header h2 {
+  font-size: 24px;
+  font-weight: bold;
+}
+.main-content .patient-list h3 {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+.main-content .patient-list .grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 20px;
+}
+.main-content .patient-list .grid .patient-card {
+  background-color: #e0e0e0;
+  padding: 12px 20px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: 0.2s;
+}
+.main-content .patient-list .grid .patient-card:hover {
+  background-color: lightgray;
+}
+.main-content .patient-list .grid .patient-card .folder-icon {
+  font-size: 18px;
+}
+.main-content .patient-list .add-new {
+  position: absolute;
+  bottom: 30px;
+  right: 30px;
+  background-color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-weight: 600;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+.main-content .patient-list .add-new span {
+  font-size: 20px;
+}
+.main-content .patient-list .add-new:hover {
+  transform: translateY(-2px);
+}
