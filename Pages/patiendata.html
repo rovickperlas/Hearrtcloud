@@ -4,11 +4,13 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>HeartCloud</title>
-  <link rel="stylesheet" href="dist/css/main.css" />
+  <link rel="stylesheet" href="../Dist/main.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 </head>
 <body>
   <div class="app">
+    
+    <!-- Sidebar -->
     <aside class="sidebar">
       <div class="logo">
         <i class="fas fa-heartbeat"></i>
@@ -27,37 +29,50 @@
       </nav>
     </aside>
 
-    <main class="main-content">
-      <section class="patient-info">
-        <h2>Patient Details</h2>
-        <div class="details-grid">
-          <p><strong>Last Name:</strong> Dela Cruz</p>
-          <p><strong>Gender:</strong> Male</p>
-          <p><strong>Contact Information:</strong> 09271140157</p>
-          <p><strong>First Name:</strong> John</p>
-          <p><strong>Age:</strong> 32</p>
-        </div>
-        <div class="remarks">
-          <p><strong>Remarks:</strong></p>
-        </div>
-      </section>
+    <!-- Content Area -->
+    <div class="content-area">
 
-      <section class="recordings">
-        <h2>Recording History</h2>
-        <div class="record">
-          <p>July 25, 2025</p>
-          <audio controls>
-            <source src="#" type="audio/mpeg" />
-          </audio>
+      <!-- Top Navbar -->
+      <header class="navbar">
+        <h1>Dashboard</h1>
+        <div class="profile">
+          <i class="fas fa-user-circle"></i>
         </div>
-        <div class="record">
-          <p>July 23, 2025</p>
-          <audio controls>
-            <source src="#" type="audio/mpeg" />
-          </audio>
-        </div>
-      </section>
-    </main>
+      </header>
+
+      <!-- Main Content -->
+      <main class="main-content">
+        <section class="patient-info">
+          <h2>Patient Details</h2>
+          <div class="details-grid">
+            <p><strong>Last Name:</strong> Dela Cruz</p>
+            <p><strong>Gender:</strong> Male</p>
+            <p><strong>Contact Information:</strong> 09271140157</p>
+            <p><strong>First Name:</strong> John</p>
+            <p><strong>Age:</strong> 32</p>
+          </div>
+          <div class="remarks">
+            <p><strong>Remarks:</strong></p>
+          </div>
+        </section>
+
+        <section class="recordings">
+          <h2>Recording History</h2>
+          <div class="record">
+            <p>July 25, 2025</p>
+            <audio controls>
+              <source src="#" type="audio/mpeg" />
+            </audio>
+          </div>
+          <div class="record">
+            <p>July 23, 2025</p>
+            <audio controls>
+              <source src="#" type="audio/mpeg" />
+            </audio>
+          </div>
+        </section>
+      </main>
+    </div>
   </div>
 </body>
 </html>

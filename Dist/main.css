@@ -342,3 +342,130 @@ body, html {
   gap: 10px;
   cursor: pointer;
 }
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", sans-serif;
+  background-color: #ffffff;
+}
+
+.app {
+  display: flex;
+  min-height: 100vh;
+}
+
+.sidebar {
+  background-color: #050b46;
+  color: #ffffff;
+  width: 80px;
+  padding: 2rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.sidebar .logo {
+  writing-mode: vertical-lr;
+  transform: rotate(180deg);
+  font-weight: bold;
+  font-size: 1rem;
+  margin-bottom: 3rem;
+  text-align: center;
+  color: #ffffff;
+}
+.sidebar .logo i {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+.sidebar .logo span {
+  display: block;
+  margin-top: 0.5rem;
+}
+.sidebar .menu {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.sidebar .menu .icon-btn {
+  background: none;
+  border: none;
+  color: #ffffff;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+.sidebar .menu .icon-btn:hover {
+  color: #8ecae6;
+}
+
+.main-content {
+  flex-grow: 1;
+  background-color: #ffffff;
+  padding: 2.5rem 3rem;
+}
+.main-content h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+.main-content .patient-info {
+  margin-bottom: 2rem;
+}
+.main-content .patient-info .details-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1rem;
+}
+.main-content .patient-info .details-grid p {
+  margin: 0;
+  font-size: 1rem;
+}
+.main-content .patient-info .remarks {
+  margin-top: 1rem;
+}
+.main-content .patient-info .remarks p {
+  margin: 0;
+}
+.main-content .recordings .record {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+.main-content .recordings .record p {
+  margin: 0;
+  font-size: 1rem;
+  min-width: 120px;
+}
+.main-content .recordings .record audio {
+  width: 300px;
+  max-width: 100%;
+}
+
+.content-area {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.navbar {
+  background-color: #f8f8f8;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #ddd;
+}
+.navbar h1 {
+  margin: 0;
+  font-size: 1.2rem;
+  color: #333;
+}
+.navbar .profile {
+  font-size: 1.5rem;
+  color: #050b46;
+}
+.navbar .profile i {
+  cursor: pointer;
+}
+.navbar .profile i:hover {
+  color: #6b6bff;
+}

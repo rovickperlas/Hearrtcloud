@@ -1,100 +1,153 @@
-$primary-color: #03045e;
-$light-text: #111;
+// Colors
+$primary-blue: #050b46;
 $white: #ffffff;
+$light-gray: #f5f5f5;
+$font-stack: 'Segoe UI', sans-serif;
 
-body, html {
+body {
   margin: 0;
-  padding: 0;
-  font-family: 'Arial', sans-serif;
-  color: $light-text;
-  background: $white;
+  font-family: $font-stack;
+  background-color: $white;
 }
 
-.layout {
+.app {
   display: flex;
-  height: 100vh;
+  min-height: 100vh;
 }
 
+// Sidebar
 .sidebar {
+  background-color: $primary-blue;
+  color: $white;
   width: 80px;
-  background-color: $primary-color;
-  padding-top: 20px;
+  padding: 2rem 0;
   display: flex;
   flex-direction: column;
   align-items: center;
 
   .logo {
-    margin-bottom: 30px;
+    writing-mode: vertical-lr;
+    transform: rotate(180deg);
+    font-weight: bold;
+    font-size: 1rem;
+    margin-bottom: 3rem;
+    text-align: center;
+    color: $white;
 
-    img {
-      width: 40px;
+    i {
+      font-size: 1.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    span {
+      display: block;
+      margin-top: 0.5rem;
     }
   }
 
-  nav ul {
-    list-style: none;
-    padding: 0;
+  .menu {
     display: flex;
     flex-direction: column;
-    gap: 30px;
+    gap: 2rem;
 
-    li {
-      color: white;
-      font-size: 20px;
+    .icon-btn {
+      background: none;
+      border: none;
+      color: $white;
+      font-size: 1.2rem;
       cursor: pointer;
+      transition: color 0.3s ease;
+
+      &:hover {
+        color: #8ecae6;
+      }
     }
   }
 }
 
-.main-section {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
+// Main content
+.main-content {
+  flex-grow: 1;
+  background-color: $white;
+  padding: 2.5rem 3rem;
 
-  .main-header {
-    background-color: $primary-color;
-    color: white;
-    padding: 15px 30px;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-
-    img {
-      width: 30px;
-    }
-
-    span {
-      font-size: 22px;
-      font-weight: bold;
-    }
+  h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
   }
 
-  .content {
-    padding: 40px;
-
-    h2 {
-      font-size: 24px;
-      margin-bottom: 20px;
-    }
+  .patient-info {
+    margin-bottom: 2rem;
 
     .details-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 15px;
-      margin-bottom: 40px;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 1rem;
+
+      p {
+        margin: 0;
+        font-size: 1rem;
+      }
+    }
+
+    .remarks {
+      margin-top: 1rem;
 
       p {
         margin: 0;
       }
     }
+  }
 
-    .recordings {
-      .recording-entry {
-        margin-bottom: 20px;
+  .recordings {
+    .record {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      margin-bottom: 1rem;
 
-        audio {
-          width: 300px;
-        }
+      p {
+        margin: 0;
+        font-size: 1rem;
+        min-width: 120px;
+      }
+
+      audio {
+        width: 300px;
+        max-width: 100%;
+      }
+    }
+  }
+}
+.content-area {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.navbar {
+  background-color: #f8f8f8;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #ddd;
+
+  h1 {
+    margin: 0;
+    font-size: 1.2rem;
+    color: #333;
+  }
+
+  .profile {
+    font-size: 1.5rem;
+    color: #050b46;
+
+    i {
+      cursor: pointer;
+
+      &:hover {
+        color: #6b6bff;
       }
     }
   }
