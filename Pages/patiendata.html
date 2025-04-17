@@ -3,53 +3,58 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>HeartCloud - Patient Details</title>
-  <link rel="stylesheet" href="style.css" />
+  <title>HeartCloud</title>
+  <link rel="stylesheet" href="dist/css/main.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 </head>
 <body>
-  <div class="layout">
+  <div class="app">
     <aside class="sidebar">
       <div class="logo">
-        <img src="/images/icon.png" alt="Logo" />
+        <i class="fas fa-heartbeat"></i>
+        <span>HeartCloud</span>
       </div>
-      <nav>
-        <ul>
-          <li><i>🕓</i></li>
-          <li><i>👤</i></li>
-          <li><i>📄</i></li>
-        </ul>
+      <nav class="menu">
+        <button class="icon-btn" title="Dashboard">
+          <i class="fas fa-chart-line"></i>
+        </button>
+        <button class="icon-btn" title="Patients">
+          <i class="fas fa-user"></i>
+        </button>
+        <button class="icon-btn" title="Records">
+          <i class="fas fa-file-medical"></i>
+        </button>
       </nav>
     </aside>
 
-    <main class="main-section">
-      <header class="main-header">
-        <img src="/images/logo.png" alt="HeartCloud Logo" />
-        <span>HeartCloud</span>
-      </header>
-
-      <section class="content">
-        <div class="patient-info">
-          <h2>Patient Details</h2>
-          <div class="details-grid">
-            <p><strong>Last Name:</strong> Dela Cruz</p>
-            <p><strong>Gender:</strong> Male</p>
-            <p><strong>Contact Information:</strong> 09271140157</p>
-            <p><strong>First Name:</strong> John</p>
-            <p><strong>Age:</strong> 32</p>
-            <p><strong>Remarks:</strong></p>
-          </div>
+    <main class="main-content">
+      <section class="patient-info">
+        <h2>Patient Details</h2>
+        <div class="details-grid">
+          <p><strong>Last Name:</strong> Dela Cruz</p>
+          <p><strong>Gender:</strong> Male</p>
+          <p><strong>Contact Information:</strong> 09271140157</p>
+          <p><strong>First Name:</strong> John</p>
+          <p><strong>Age:</strong> 32</p>
         </div>
+        <div class="remarks">
+          <p><strong>Remarks:</strong></p>
+        </div>
+      </section>
 
-        <div class="recordings">
-          <h2>Recording History</h2>
-          <div class="recording-entry">
-            <p>July 25, 2025</p>
-            <audio controls src="/audio/sample1.mp3"></audio>
-          </div>
-          <div class="recording-entry">
-            <p>July 23, 2025</p>
-            <audio controls src="/audio/sample2.mp3"></audio>
-          </div>
+      <section class="recordings">
+        <h2>Recording History</h2>
+        <div class="record">
+          <p>July 25, 2025</p>
+          <audio controls>
+            <source src="#" type="audio/mpeg" />
+          </audio>
+        </div>
+        <div class="record">
+          <p>July 23, 2025</p>
+          <audio controls>
+            <source src="#" type="audio/mpeg" />
+          </audio>
         </div>
       </section>
     </main>
